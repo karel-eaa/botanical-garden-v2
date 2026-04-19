@@ -2,7 +2,7 @@ import { useProgressStore } from "../store/progressStore";
 
 export default function LandingPage3() {
   const goToLanding4 = useProgressStore((s) => s.goToLanding4);
-  const gardener = `${import.meta.env.BASE_URL}images/InstructionPagePt2.png`;
+  const gardener = `${import.meta.env.BASE_URL}images/instruction/InstructionPagePt2.png`;
 
   return (
     <main className="min-h-screen bg-[#F1F8E9] px-[50px] pt-[70px]">
