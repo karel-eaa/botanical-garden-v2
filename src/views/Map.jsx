@@ -24,7 +24,7 @@ export default function Map() {
   );
 
   return (
-    <main className="min-h-screen flex justify-center p-4 bg-[#F1F8E9]">
+    <main className="min-h-screen flex justify-center p-4 bg-[linear-gradient(0deg,_#F1F8E9_54.33%,_#C3E2FF_100%)]">
       <section className="relative h-[800px] w-full max-w-md">
         <svg
           className="absolute inset-0 w-full h-full"
