@@ -37,6 +37,9 @@ export const useProgressStore = create(
           view: "map",
         });
       },
+      getCurrentRoom: () => {
+        return get().currentRoom;
+      },
 
       // MENU
       selectRoom: (room) => {
