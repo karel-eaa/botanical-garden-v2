@@ -4,10 +4,7 @@ import { useState } from "react";
 export default function LandingPage() {
   // DIFFERENT VIEWS
   const [index, setIndex] = useState(0);
-  const advance = () => {
-    setIndex(index + 1);
-    console.log(index);
-  };
+  const advance = () => setIndex(index + 1);
   const startGame = useProgressStore((s) => s.startGame);
 
   // IMAGES
@@ -16,6 +13,7 @@ export default function LandingPage() {
   const gardener2 = `${import.meta.env.BASE_URL}images/instruction/InstructionPagePt2.png`;
   const gardener3 = `${import.meta.env.BASE_URL}images/instruction/InstructionPagePt3.png`;
 
+  // VIEW LOGIC
   if (index === 0) {
     return (
       <main className="min-h-screen bg-[#F1F8E9]">

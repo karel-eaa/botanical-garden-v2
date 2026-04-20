@@ -8,7 +8,7 @@ export default function Map() {
       getRoomPercentage: s.getRoomPercentage,
     })),
   );
-
+  console.log(getRoomPercentage(14));
   return (
     <main className="min-h-screen flex justify-center p-4 bg-[linear-gradient(0deg,_#F1F8E9_54.33%,_#C3E2FF_100%)]">
       {/* ✅ useMap (camelCase), self-closing */}
@@ -16,6 +16,7 @@ export default function Map() {
         src="/botanical-garden-v2/images/map/overview-map.png"
         useMap="#image-map"
         alt="World map"
+        className="h-[800px] w-[420px] object-contain"
       />
 
       {/* ✅ All <area> tags are siblings, each self-closed */}
