@@ -16,7 +16,7 @@ export default function Map() {
         src="/botanical-garden-v2/images/map/overview-map.png"
         useMap="#image-map"
         alt="World map"
-        className="h-[800px] w-[420px] object-contain"
+        className="h-[700px] w-[400px] object-contain"
       />
 
       {/* ✅ All <area> tags are siblings, each self-closed */}
