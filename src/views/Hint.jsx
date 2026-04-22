@@ -63,7 +63,7 @@ export default function Hint() {
       </button>
       <button
         onClick={() => goToScanner()}
-        className="font-semibold fixed bottom-[15%] text-[24px] inline-flex items-center justify-center gap-[10px] mt-[40px] rounded-[40px] border-[#A5D14F] bg-[#A5D14F] border-2 p-[16px] w-[250px]"
+        className="font-semibold fixed bottom-[5%] text-[24px] inline-flex items-center justify-center gap-[10px] mt-[40px] rounded-[40px] border-[#A5D14F] bg-[#A5D14F] border-2 p-[16px] w-[250px]"
       >
         Scan to Unlock{" "}
         <svg
