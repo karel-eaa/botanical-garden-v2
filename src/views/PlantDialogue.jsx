@@ -20,7 +20,7 @@ export default function PlantDialogue() {
     13: "bg-[url('/images/room/hum.png')]",
     14: "bg-[url('/images/room/trop.png')]",
   };
-  const gardener = `${import.meta.env.BASE_URL}images/instruction/InstructionPage.png`;
+  const gardener = `${import.meta.env.BASE_URL}images/instruction/InstructionPagePt2.png`;
 
   return (
     <main
