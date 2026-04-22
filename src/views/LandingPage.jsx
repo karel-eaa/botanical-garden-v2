@@ -21,7 +21,7 @@ export default function LandingPage() {
           <h1 className="text-3xl font-bold text-[#607A2E] text-[36px] w-[329px]">
             Welcome to the Botanical Garden
           </h1>
-          <div className="mt-[35px] flex w-full max-w-xs items-center gap-3 text-[#8C8C84] mb-[72px]">
+          <div className="mt-[35px] flex w-full max-w-xs items-center gap-3 text-[#8C8C84] mb-[10%]">
             <span className="h-px flex-1 bg-[#8C8C84]/70"></span>
             <span className="text-[23px]">Aarhus</span>
             <span className="h-px flex-1 bg-[#8C8C84]/70"></span>
@@ -31,7 +31,7 @@ export default function LandingPage() {
             alt="Landing page"
             width={345}
             height={329}
-            className="mb-[86px]"
+            className="mb-[15%]"
           />
           <button
             onClick={advance}
