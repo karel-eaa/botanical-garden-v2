@@ -45,14 +45,12 @@ export default function LandingPage() {
   } else if (index === 1) {
     return (
       <main className="min-h-screen bg-[#F1F8E9] px-[9%] pt-[10%]">
-        <div className="relative w-full max-w-[333px] h-[300px]">
+        <div className="relative w-[270px] h-[300px]">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="270"
-            height="370"
             viewBox="0 0 333 373"
             fill="none"
-            className="absolute inset-0"
+            className="absolute inset-0 h-full w-full"
           >
             <path
               d="M18.9529 0C9.52105 0 0 7.00298 0 20.3455V276.248C0 292.945 5.50435 299.727 18.9529 299.727H59.0308V373L119.192 299.764H314.047C326.811 299.764 333 292.06 333 276.285V20.3823C333 7.0398 323.479 0.0368576 314.047 0.0368576H18.9529V0Z"
@@ -60,7 +58,7 @@ export default function LandingPage() {
             />
           </svg>
           <div className="relative z-10 p-[7%] h-full flex flex-col justify-start">
-            <p className="text-[20px] pt-[10%] text-[#4A5E29] mb-[5%] leading-[150%] tracking-[1.2px]">
+            <p className="w-full max-w-[225px] break-words [overflow-wrap:anywhere] text-[18px] pt-[8%] text-[#4A5E29] mb-[5%] leading-[145%] tracking-[1.2px]">
               Nice to meet you! <br className="mb-[10%]" /> The garden is
               divided into 4 sections. Each zone contains unique plants you will
               need to find.
@@ -90,14 +88,12 @@ export default function LandingPage() {
   } else if (index === 2) {
     return (
       <main className="min-h-screen bg-[#F1F8E9] px-[9%] pt-[10%]">
-        <div className="relative w-full max-w-[333px] h-[300px]">
+        <div className="relative w-[270px] h-[300px]">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="270"
-            height="370"
             viewBox="0 0 333 373"
             fill="none"
-            className="absolute inset-0"
+            className="absolute inset-0 h-full w-full"
           >
             <path
               d="M18.9529 0C9.52105 0 0 7.00298 0 20.3455V276.248C0 292.945 5.50435 299.727 18.9529 299.727H59.0308V373L119.192 299.764H314.047C326.811 299.764 333 292.06 333 276.285V20.3823C333 7.0398 323.479 0.0368576 314.047 0.0368576H18.9529V0Z"
@@ -105,7 +101,7 @@ export default function LandingPage() {
             />
           </svg>
           <div className="relative z-10 p-[7%] h-full flex flex-col justify-start">
-            <p className="text-[20px] pt-[10%] text-[#4A5E29] leading-[150%] tracking-[1.2px]">
+            <p className="w-full max-w-[225px] break-words [overflow-wrap:anywhere] text-[18px] pt-[8%] text-[#4A5E29] leading-[145%] tracking-[1.2px]">
               Your task is very simple! You will be shown an image of a plant
               before each challenge. Find the plant that matches the image and
               scan the QR code to collect it.
@@ -135,14 +131,12 @@ export default function LandingPage() {
   } else if (index === 3) {
     return (
       <main className="min-h-screen bg-[#F1F8E9] px-[50px] pt-[70px]">
-        <div className="relative w-full max-w-[333px] h-[300px]">
+        <div className="relative w-[270px] h-[300px]">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="270"
-            height="370"
             viewBox="0 0 333 373"
             fill="none"
-            className="absolute inset-0"
+            className="absolute inset-0 h-full w-full"
           >
             <path
               d="M18.9529 0C9.52105 0 0 7.00298 0 20.3455V276.248C0 292.945 5.50435 299.727 18.9529 299.727H59.0308V373L119.192 299.764H314.047C326.811 299.764 333 292.06 333 276.285V20.3823C333 7.0398 323.479 0.0368576 314.047 0.0368576H18.9529V0Z"
@@ -150,7 +144,7 @@ export default function LandingPage() {
             />
           </svg>
           <div className="relative z-10 p-[7%] h-full flex flex-col justify-start">
-            <p className="text-[20px] pt-[10%] text-[#4A5E29] leading-[150%] tracking-[1.2px]">
+            <p className="w-full max-w-[225px] break-words [overflow-wrap:anywhere] text-[18px] pt-[6%] text-[#4A5E29] leading-[145%] tracking-[1.2px]">
               Each correct scan unlocks the next challenge. Complete all zones
               to finish the game. <br className="mb-[8%]" />
               Are you ready?
