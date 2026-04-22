@@ -59,16 +59,16 @@ export default function LandingPage() {
               fill="white"
             />
           </svg>
-          <div className="relative z-10 p-[20px] h-full flex flex-col justify-start">
-            <p className="text-[16px] text-[#4A5E29] mb-[40px] leading-[150%] tracking-[1.2px] text-[24px]">
-              Nice to meet you! <br className="mb-[14px]" /> The garden is
+          <div className="relative z-10 p-[7%] h-full flex flex-col justify-start">
+            <p className="text-[16px] text-[#4A5E29] mb-[7%] leading-[150%] tracking-[1.2px] text-[24px]">
+              Nice to meet you! <br className="mb-[10%]" /> The garden is
               divided into 4 sections. Each zone contains unique plants you will
               need to find.
             </p>
           </div>
           <button
             onClick={advance}
-            className="absolute bottom-[40px] right-[20px] z-20 w-[78px] h-[61px] rounded-[40px] bg-[#A5D14F] flex items-center justify-center py-[12px] text-white font-bold leading-[100%]"
+            className="absolute bottom-[10%] right-[20px] z-20 w-[78px] h-[61px] rounded-[40px] bg-[#A5D14F] flex items-center justify-center py-[12px] text-white font-bold leading-[100%]"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -113,7 +113,7 @@ export default function LandingPage() {
           </div>
           <button
             onClick={advance}
-            className="absolute bottom-[40px] right-[20px] z-20 w-[78px] h-[61px] rounded-[40px] bg-[#A5D14F] flex items-center justify-center py-[12px] text-white font-bold leading-[100%]"
+            className="absolute bottom-[10%] right-[20px] z-20 w-[78px] h-[61px] rounded-[40px] bg-[#A5D14F] flex items-center justify-center py-[12px] text-white font-bold leading-[100%]"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -152,13 +152,13 @@ export default function LandingPage() {
           <div className="relative z-10 p-[20px] h-full flex flex-col justify-start">
             <p className="text-[16px] text-[#4A5E29] leading-[150%] tracking-[1.2px] text-[24px]">
               Each correct scan unlocks the next challenge. Complete all zones
-              to finish the game. <br className="mb-[70px]" />
+              to finish the game. <br className="mb-[23%]" />
               Are you ready?
             </p>
           </div>
           <button
             onClick={startGame}
-            className="absolute bottom-[30px] right-[20px] z-20 w-[153px] h-[53px] rounded-[40px] bg-[#A5D14F] flex items-center justify-center py-[12px] text-white text-[24px] font-bold leading-[100%]"
+            className="absolute bottom-[10%] right-[20px] z-20 w-[153px] h-[53px] rounded-[40px] bg-[#A5D14F] flex items-center justify-center py-[12px] text-white text-[24px] font-bold leading-[100%]"
           >
             Let's begin
           </button>
