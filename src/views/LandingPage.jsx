@@ -44,12 +44,12 @@ export default function LandingPage() {
     );
   } else if (index === 1) {
     return (
-      <main className="min-h-screen bg-[#F1F8E9] px-[50px] pt-[70px]">
-        <div className="relative w-full max-w-[333px] h-[373px]">
+      <main className="min-h-screen bg-[#F1F8E9] px-[9%] pt-[10%]">
+        <div className="relative w-full max-w-[333px] h-[300px]">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="333"
-            height="373"
+            width="270"
+            height="370"
             viewBox="0 0 333 373"
             fill="none"
             className="absolute inset-0"
@@ -60,7 +60,7 @@ export default function LandingPage() {
             />
           </svg>
           <div className="relative z-10 p-[7%] h-full flex flex-col justify-start">
-            <p className="text-[16px] text-[#4A5E29] mb-[7%] leading-[150%] tracking-[1.2px] text-[24px]">
+            <p className="text-[20px] pt-[10%] text-[#4A5E29] mb-[5%] leading-[150%] tracking-[1.2px]">
               Nice to meet you! <br className="mb-[10%]" /> The garden is
               divided into 4 sections. Each zone contains unique plants you will
               need to find.
@@ -68,7 +68,7 @@ export default function LandingPage() {
           </div>
           <button
             onClick={advance}
-            className="absolute bottom-[10%] right-[20px] z-20 w-[78px] h-[61px] rounded-[40px] bg-[#A5D14F] flex items-center justify-center py-[12px] text-white font-bold leading-[100%]"
+            className="absolute bottom-[2%] right-[20px] z-20 w-[78px] h-[61px] rounded-[40px] bg-[#A5D14F] flex items-center justify-center py-[12px] text-white font-bold leading-[100%]"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -89,12 +89,12 @@ export default function LandingPage() {
     );
   } else if (index === 2) {
     return (
-      <main className="min-h-screen bg-[#F1F8E9] px-[50px] pt-[70px]">
-        <div className="relative w-full max-w-[333px] h-[373px]">
+      <main className="min-h-screen bg-[#F1F8E9] px-[9%] pt-[10%]">
+        <div className="relative w-full max-w-[333px] h-[300px]">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="333"
-            height="373"
+            width="270"
+            height="370"
             viewBox="0 0 333 373"
             fill="none"
             className="absolute inset-0"
@@ -104,8 +104,8 @@ export default function LandingPage() {
               fill="white"
             />
           </svg>
-          <div className="relative z-10 p-[20px] h-full flex flex-col justify-start">
-            <p className="text-[16px] text-[#4A5E29] leading-[150%] tracking-[1.2px] text-[24px]">
+          <div className="relative z-10 p-[7%] h-full flex flex-col justify-start">
+            <p className="text-[20px] pt-[10%] text-[#4A5E29] leading-[150%] tracking-[1.2px]">
               Your task is very simple! You will be shown an image of a plant
               before each challenge. Find the plant that matches the image and
               scan the QR code to collect it.
@@ -113,7 +113,7 @@ export default function LandingPage() {
           </div>
           <button
             onClick={advance}
-            className="absolute bottom-[10%] right-[20px] z-20 w-[78px] h-[61px] rounded-[40px] bg-[#A5D14F] flex items-center justify-center py-[12px] text-white font-bold leading-[100%]"
+            className="absolute bottom-[3%] right-[20px] z-20 w-[78px] h-[61px] rounded-[40px] bg-[#A5D14F] flex items-center justify-center py-[12px] text-white font-bold leading-[100%]"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -135,11 +135,11 @@ export default function LandingPage() {
   } else if (index === 3) {
     return (
       <main className="min-h-screen bg-[#F1F8E9] px-[50px] pt-[70px]">
-        <div className="relative w-full max-w-[333px] h-[373px]">
+        <div className="relative w-full max-w-[333px] h-[300px]">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="333"
-            height="373"
+            width="270"
+            height="370"
             viewBox="0 0 333 373"
             fill="none"
             className="absolute inset-0"
@@ -149,16 +149,16 @@ export default function LandingPage() {
               fill="white"
             />
           </svg>
-          <div className="relative z-10 p-[20px] h-full flex flex-col justify-start">
-            <p className="text-[16px] text-[#4A5E29] leading-[150%] tracking-[1.2px] text-[24px]">
+          <div className="relative z-10 p-[7%] h-full flex flex-col justify-start">
+            <p className="text-[20px] pt-[10%] text-[#4A5E29] leading-[150%] tracking-[1.2px]">
               Each correct scan unlocks the next challenge. Complete all zones
-              to finish the game. <br className="mb-[23%]" />
+              to finish the game. <br className="mb-[8%]" />
               Are you ready?
             </p>
           </div>
           <button
             onClick={startGame}
-            className="absolute bottom-[10%] right-[20px] z-20 w-[153px] h-[53px] rounded-[40px] bg-[#A5D14F] flex items-center justify-center py-[12px] text-white text-[24px] font-bold leading-[100%]"
+            className="absolute bottom-[1%] left-[45%] z-20 w-[153px] h-[53px] rounded-[40px] bg-[#A5D14F] flex items-center justify-center py-[12px] text-white text-[24px] font-bold leading-[100%]"
           >
             Let's begin
           </button>
