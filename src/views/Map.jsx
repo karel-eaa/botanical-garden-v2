@@ -1,6 +1,32 @@
 import { useShallow } from "zustand/shallow";
 import { useProgressStore } from "../store/progressStore";
 
+// Coordinates as percentages of the image's natural dimensions (width x height)
+// Original coords example: "175,88,332,245" on an image of natural width W and height H
+// x1% = 175/W * 100, y1% = 88/H * 100, x2% = 332/W * 100, y2% = 245/H * 100
+const ROOM_AREAS = [
+  {
+    id: 14,
+    label: "rainforest",
+    style: { left: "40.89%", top: "9.50%", width: "36.68%", height: "16.95%" },
+  },
+  {
+    id: 13,
+    label: "mountain",
+    style: { left: "6.78%", top: "28.08%", width: "34.58%", height: "16.20%" },
+  },
+  {
+    id: 12,
+    label: "dessert",
+    style: { left: "62.15%", top: "42.98%", width: "34.35%", height: "16.31%" },
+  },
+  {
+    id: 11,
+    label: "mediterranean",
+    style: { left: "7.94%", top: "54.00%", width: "34.35%", height: "16.20%" },
+  },
+];
+
 export default function Map() {
   const { selectRoom, getRoomPercentage } = useProgressStore(
     useShallow((s) => ({
@@ -8,53 +34,29 @@ export default function Map() {
       getRoomPercentage: s.getRoomPercentage,
     })),
   );
-  console.log(getRoomPercentage(14));
+
   return (
     <main className="min-h-screen flex justify-center p-4 bg-[linear-gradient(0deg,_#F1F8E9_54.33%,_#C3E2FF_100%)]">
-      {/* ✅ useMap (camelCase), self-closing */}
-      <img
-        src="/botanical-garden-v2/images/map/overview-map.png"
-        useMap="#image-map"
-        alt="World map"
-        className=""
-      />
-      {/* putting h and w styling away to quick fix click issue h-[620px] w-[350px] object-contain */}
-
-      {/* ✅ All <area> tags are siblings, each self-closed */}
-      <map name="image-map">
-        <area
-          target=""
-          alt="rainforest"
-          title="rainforest"
-          coords="175,88,332,245"
-          shape="rect"
-          onClick={() => selectRoom(14)}
+      <div className="relative inline-block">
+        <img
+          src="/botanical-garden-v2/images/map/overview-map.png"
+          alt="Garden map"
+          className="block max-w-full h-auto"
         />
-        <area
-          target=""
-          alt="mountain"
-          title="mountain"
-          coords="29,260,177,410"
-          shape="rect"
-          onClick={() => selectRoom(13)}
-        />
-        <area
-          target=""
-          alt="dessert"
-          title="dessert"
-          coords="266,398,413,549"
-          shape="rect"
-          onClick={() => selectRoom(12)}
-        />
-        <area
-          target=""
-          alt="mediterranean"
-          title="mediterranean"
-          coords="34,500,181,650"
-          shape="rect"
-          onClick={() => selectRoom(11)}
-        />
-      </map>
+        {ROOM_AREAS.map((area) => (
+          <div
+            key={area.id}
+            onClick={() => selectRoom(area.id)}
+            title={area.label}
+            aria-label={area.label}
+            role="button"
+            tabIndex={0}
+            onKeyDown={(e) => e.key === "Enter" && selectRoom(area.id)}
+            className="absolute cursor-pointer"
+            style={area.style}
+          />
+        ))}
+      </div>
     </main>
   );
 }
