@@ -54,13 +54,13 @@ export default function Hint() {
           alt="plant-img"
           className="rounded-[20px] h-[400px] w-[350px]"
         />
-        <div className="absolute bottom-[15px] right-[15px] bg-white border-2 border-[#A5D14F] rounded-[40px] p-[8px] flex items-center justify-center w-[80px]">
+        <div onClick={() => setAdditionalHint(!additionalHint)} className="absolute bottom-[15px] right-[15px] bg-white border-2 border-[#A5D14F] rounded-[40px] p-[8px] flex items-center justify-center w-[80px]">
           <span className="text-[#1B3B1A] font-semibold">💡 Tip</span>
         </div>
       </div>
-      <button onClick={() => setAdditionalHint(!additionalHint)}>
+      {/*<button onClick={() => setAdditionalHint(!additionalHint)}>
         {additionalHint ? "Back To First Hint" : "Show Additional Hint"}
-      </button>
+      </button>*/}
       <button
         onClick={() => goToScanner()}
         className="font-semibold fixed bottom-[5%] text-[24px] inline-flex items-center justify-center gap-[10px] mt-[40px] rounded-[40px] border-[#A5D14F] bg-[#A5D14F] border-2 p-[16px] w-[250px]"
