@@ -84,7 +84,7 @@ export default function LandingPage() {
             </svg>
           </button>
         </div>
-        <img src={gardener} alt="Gardener" width={285} height={445} />
+        <img src={gardener} alt="Gardener" width={255} height={385} />
       </main>
     );
   } else if (index === 2) {
@@ -128,7 +128,7 @@ export default function LandingPage() {
               />
             </svg>
           </button>
-          <img src={gardener2} alt="Gardener" width={285} height={445} />
+          <img src={gardener2} alt="Gardener" width={255} height={385} />
         </div>
       </main>
     );
@@ -162,7 +162,7 @@ export default function LandingPage() {
           >
             Let's begin
           </button>
-          <img src={gardener3} alt="Gardener" width={285} height={445} />
+          <img src={gardener3} alt="Gardener" width={255} height={385} />
         </div>
       </main>
     );
