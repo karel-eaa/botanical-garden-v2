@@ -101,7 +101,7 @@ export default function LandingPage() {
             />
           </svg>
           <div className="relative z-10 p-[7%] h-full flex flex-col justify-start">
-            <p className="w-full max-w-[225px] break-words [overflow-wrap:anywhere] text-[18px] pt-[8%] text-[#4A5E29] leading-[145%] tracking-[1.2px]">
+            <p className="w-full max-w-[225px] break-words [overflow-wrap:anywhere] text-[18px] text-[#4A5E29] leading-[145%] tracking-[1.2px]">
               Your task is very simple! You will be shown an image of a plant
               before each challenge. Find the plant that matches the image and
               scan the QR code to collect it.
@@ -144,7 +144,7 @@ export default function LandingPage() {
             />
           </svg>
           <div className="relative z-10 p-[7%] h-full flex flex-col justify-start">
-            <p className="w-full max-w-[225px] break-words [overflow-wrap:anywhere] text-[18px] pt-[6%] text-[#4A5E29] leading-[145%] tracking-[1.2px]">
+            <p className="w-full max-w-[225px] break-words [overflow-wrap:anywhere] text-[18px] text-[#4A5E29] leading-[145%] tracking-[1.2px]">
               Each correct scan unlocks the next challenge. Complete all zones
               to finish the game. <br className="mb-[8%]" />
               Are you ready?
@@ -152,7 +152,7 @@ export default function LandingPage() {
           </div>
           <button
             onClick={startGame}
-            className="absolute bottom-[1%] left-[45%] z-20 w-[153px] h-[53px] rounded-[40px] bg-[#A5D14F] flex items-center justify-center py-[12px] text-white text-[24px] font-bold leading-[100%]"
+            className="absolute bottom-[13%] left-[45%] z-20 w-[153px] h-[53px] rounded-[40px] bg-[#A5D14F] flex items-center justify-center py-[12px] text-white text-[24px] font-bold leading-[100%]"
           >
             Let's begin
           </button>
