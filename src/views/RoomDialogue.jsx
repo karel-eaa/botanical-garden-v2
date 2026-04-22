@@ -31,7 +31,7 @@ export default function RoomDialogue() {
           alt="gardener"
           height={500}
           width={300}
-          className="fixed bottom-[220px]"
+          className="fixed bottom-[25%]"
         />
         <p
           onClick={() => {
@@ -41,7 +41,7 @@ export default function RoomDialogue() {
               setStep(step + 1);
             }
           }}
-          className="flex bg-white rounded-[50px] border-[5px] border-[#F2DBCD] fixed bottom-[110px] p-[24px] h-[140px] w-[400px] justify-center items-center"
+          className="flex bg-white rounded-[50px] border-[5px] border-[#F2DBCD] fixed bottom-[10%] p-[24px] h-[140px] w-[400px] justify-center items-center"
         >
           {roomScript[step]}
         </p>
